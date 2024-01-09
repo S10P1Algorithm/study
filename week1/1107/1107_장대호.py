@@ -1,14 +1,14 @@
 channel_number = int(input())
 number_of_malfnc = int(input())
-malfnc_num = set(map(str, input().split())) #사용할 수 없는 번호를 집합 연산으로 빼기 위해 set으로 받아옴
 zero_to_nine_number = {str(i) for i in range(10)}
 
 # 모두 사용가능하면 0~9의 번호 사용
-if not number_of_malfnc:
+if number_of_malfnc == 0:
     available_num = zero_to_nine_number
 # 고장난 버튼이 있으면 오작동 번호를 제거
 else:
-    available_num = zero_to_nine_number - malfnc_num
+    # 사용할 수 없는 번호를 집합 연산으로 빼기 위해 set으로 받아옴
+    available_num = zero_to_nine_number - set(input().split())
 
 # 현재 번호와 이동하려는 채널 번호사이의 거리
 ans = abs(channel_number - 100)
@@ -20,8 +20,6 @@ for n in range(1000000):
     for i in range(len(num)):
     # 사용가능한 숫자가 아니라면
         if num[i] not in available_num:
-            #{0, 1, 2, 3, 4, 5, 9}
-            # print(num[i], type(num[i]), '는 aval하지 않음')
             break #해당 숫자는 폐기
         # 다 돌았다면, 차이만큼 +, - 버튼 횟수화, 숫자 입력을 위한 버튼 횟수를 더한 값의 최솟값을 갱신
         if i == len(num)-1:
