@@ -21,10 +21,10 @@
 |이름|문제번호|링크|
 |---|---|:---|
 | 김도훈 |  |  |
-| 김영빈 | 17420 |  |
+| 김영빈 | 17420 | https://www.acmicpc.net/problem/17420 |
 | 김지용 | 1937 | https://www.acmicpc.net/problem/1937 |
-| 이운재 | 1107 |  |
-| 장대호 | 7569 |  |
+| 이운재 | 1107 | https://www.acmicpc.net/problem/1107 |
+| 장대호 | 7569 | https://www.acmicpc.net/problem/7569  |
 
 ## WEEK 2
 
