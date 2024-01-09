@@ -1,51 +1,30 @@
-from collections import deque
+channel_number = int(input())
+number_of_malfnc = int(input())
+malfnc_num = set(map(str, input().split())) #사용할 수 없는 번호를 집합 연산으로 빼기 위해 set으로 받아옴
+zero_to_nine_number = {str(i) for i in range(10)}
 
-#탐색을 위한 dx, dy, dz
-#순서대로 좌, 우, 상, 하, 앞, 뒤
-delta = [(-1, 0, 0), (1, 0, 0), (0, 0, 1), (0, 0, -1), (0, -1, 0), (0, 1, 0)]
+# 모두 사용가능하면 0~9의 번호 사용
+if not number_of_malfnc:
+    available_num = zero_to_nine_number
+# 고장난 버튼이 있으면 오작동 번호를 제거
+else:
+    available_num = zero_to_nine_number - malfnc_num
 
-#bfs
-def bfs():
-    while Queue:
-        x, y, z = Queue.popleft()
-        for d in range(6):
-            nx, ny, nz = x + delta[d][0], y + delta[d][1], z + delta[d][2]
-            # 상자 범위 내에
-            if 0 <= nx < M and 0 <= ny < N and 0 <= nz < H:
-                # 익지 않은 사과가 있다면,
-                if tomato_box[nz][ny][nx] == 0:
-                    # 1은 익은 사과, 2는 1일차에 익은 사과,
-                    # ... 따라서 ans는 max(tomato_box) - 1 임
-                    tomato_box[nz][ny][nx] = tomato_box[z][y][x] + 1
-                    Queue.append((nx, ny, nz))
+# 현재 번호와 이동하려는 채널 번호사이의 거리
+ans = abs(channel_number - 100)
+# 500000 < 으로 가기 위해 0에서 오름차순 접근
+# 또는, 999999에서 내림차순으로 접근
+for n in range(1000000):
+    # num에 사용가능한 번호가 포함되어있는지 확인하기 위해 str 변환
+    num = str(n)
+    for i in range(len(num)):
+    # 사용가능한 숫자가 아니라면
+        if num[i] not in available_num:
+            #{0, 1, 2, 3, 4, 5, 9}
+            # print(num[i], type(num[i]), '는 aval하지 않음')
+            break #해당 숫자는 폐기
+        # 다 돌았다면, 차이만큼 +, - 버튼 횟수화, 숫자 입력을 위한 버튼 횟수를 더한 값의 최솟값을 갱신
+        if i == len(num)-1:
+            ans = min(ans, abs(channel_number - n) + len(num))
 
-M, N, H = map(int, input().split())
-
-#가로 M, 세로 N, 높이 H인 토마토 박스
-tomato_box = [[list(map(int, input().split())) for _ in range(N)] for _ in range(H)]
-#좌표를 담을 Queue 생성
-Queue = deque()
-
-#초기 토마토 좌표를 Queue에 담기
-for z in range(H):
-    for y in range(N):
-        for x in range(M):
-            if tomato_box[z][y][x] == 1:
-                Queue.append((x,y,z))
-#탐색(bfs)
-bfs()
-
-#tomato_box에 0이 하나라도 남아있다면, 익지않은 것이고
-#다 익었다면, 최댓값 - 1이 답이 됨
-ans = 0
-
-for z in range(H):
-    for y in range(N):
-        for x in range(M):
-            #익지 않았다면 답을 출력하고 종료
-            if tomato_box[z][y][x] == 0:
-                print(-1)
-                exit()
-            ans = max(ans, tomato_box[z][y][x])
-
-print(ans-1)
+print(ans)
