@@ -1,31 +1,43 @@
-from collections import deque
-
 n = int(input())
 
 board = []
 
 for i in range(n):
-    board.append(list(map(int, input().split())))
+    board.append(tuple(map(int, input().split())))
 
-result = n ** 2
+result = 0
 
 delta_r = [-1, 1, 0, 0]
 delta_c = [0, 0, -1, 1]
 
 
-way_board = [[0 for _ in range(n)] for _ in range(n)]
+def is_stop(row, col):
+    for i in range(4):
+        nr = row + delta_r[i]
+        nc = col + delta_c[i]
+        if 0 <= nr < n and 0 <= nc < n and board[nr][nc] > board[row][col]:
+            return False
+    return True
 
-for row in range(n):
-    for col in range(n):
+
+def backtrack(row, col, cnt):
+    global result
+    if is_stop(row, col):
+        result = max(result, cnt)
+    else:
         curr = board[row][col]
-        is_stop = True
-        for k in range(4):
-            nr = row + delta_r[k]
-            nc = col + delta_c[k]
-            if 0 <= nr < n and 0 <= nc < n and curr < board[nr][nc]:
-                is_stop = False
-                break
-        if is_stop:
-            way_board[row][col] = 0
-        else:
-            way_board[row][col] = 1
+        for i in range(4):
+            nr = row + delta_r[i]
+            nc = col + delta_c[i]
+            if 0 <= nr < n and 0 <= nc < n and board[nr][nc] > curr:
+                cnt += 1
+                backtrack(nr, nc, cnt)
+                cnt -= 1
+
+
+for i in range(n):
+    for j in range(n):
+        if not is_stop(i, j):
+            backtrack(i, j, 1)
+
+print(result)
