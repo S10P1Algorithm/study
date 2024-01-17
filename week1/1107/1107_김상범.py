@@ -3,7 +3,8 @@ st = sys.stdin.readline
 
 desire = desire_digit = int(st())
 M = int(st())
-# error = set(map(int, st().split()))
+
+# 
 error = set(st().split())
 available = {'0', '1' ,'2', '3', '4', '5', '6', '7', '8', '9'} - error
 # print(available)
