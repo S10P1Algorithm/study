@@ -9,7 +9,7 @@ gph = [{} for _ in range(n+1)]
 edge = []
 vert = [0] * (n+1)
 n_connected = [False]*n
-rev_connection = [[]]*n
+rev_connection = [[] for _ in range(n)]
 n_cycle = False
 
 for _ in range(m):
@@ -30,6 +30,7 @@ while que:
             n_connected[v] = True
             que.append(v)
 
+    
 
 # 0번노드 추가후 벨만포드로 음의 사이클 확인
 for v in range(1, n+1):
@@ -40,20 +41,17 @@ for v in range(1, n+1):
 for iter in range(1, n+1):
     for e in edge:
         u, v, w = e
-        if n_connected[u-1]:
-            if vert[u] + w < vert[v] and n_connected[v-1]:
-                vert[v] = vert[u] + w
-                if iter == n:
-                    n_cycle = True
+        if vert[u] + w < vert[v]:
+            vert[v] = vert[u] + w
+            if iter == n and n_connected[v-1]:
+                n_cycle = True
 
 
 # 음의 사이클 없다면 cost 양수로 변환 후 다익스트라
 if not n_cycle and n_connected[0]:
     for u in range(1, n+1):
-        if n_connected[u-1]:
-            for v in gph[u].keys():
-                if n_connected[v-1]:
-                    gph[u][v] = gph[u][v] + vert[u] - vert[v]
+        for v in gph[u].keys():
+            gph[u][v] = gph[u][v] + vert[u] - vert[v]
 
 
     vert = [20000000] * (n+1)
@@ -81,4 +79,3 @@ if not n_cycle and n_connected[0]:
     print(*path[::-1])
 else:
     print(-1)
-print(n_connected)
