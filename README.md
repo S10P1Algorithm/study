@@ -47,7 +47,7 @@
 | 김영빈 | 18185 | https://www.acmicpc.net/problem/18185  |
 | 김준수 | 22965 | https://www.acmicpc.net/problem/22965 |
 | 김지용 | 5557 | https://www.acmicpc.net/problem/5557 |
-| 장대호 |  |  |
+| 장대호 | 2239 | https://www.acmicpc.net/problem/2239 |
 
 ## WEEK 3
 
