@@ -43,7 +43,7 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김상범 |  |  |
+| 김상범 | 16566 | https://www.acmicpc.net/problem/16566 |
 | 김영빈 | 18185 | https://www.acmicpc.net/problem/18185  |
 | 김준수 | 22965 | https://www.acmicpc.net/problem/22965 |
 | 김지용 | 5557 | https://www.acmicpc.net/problem/5557 |
