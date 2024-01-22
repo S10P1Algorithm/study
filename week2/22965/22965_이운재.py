@@ -1,3 +1,36 @@
+n = int(input())
+arr = [0]+ list(map(int, input().split()))
+
+ans = 1
+cnt = 0
+m = 1e9
+arr[0] = -1e9
+sorted_arr = True
+flag = True
+
+for i in range(1, n +1):
+    if arr[i] < arr[i - 1]:
+        sorted_arr = False
+        cnt += 1
+    if cnt and arr[i] > arr[1]:
+        flag = False
+
+if sorted_arr:
+    print("1")
+elif cnt == 1 and flag:
+    print("2")
+else:
+    print("3")
+
+
+
+
+
+
+
+
+
+'''
 def partition(a,begin,end):
     global res
     pivot = (begin + end) // 2
@@ -21,6 +54,7 @@ arr = list(map(int, input().split()))
 res = 0        
 partition(arr,0,N-1)
 print(res+1)     
+'''
 '''
 
 arr2 = sorted(arr)
