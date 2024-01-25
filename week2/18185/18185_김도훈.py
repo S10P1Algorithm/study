@@ -5,8 +5,8 @@ N = int(input())
 A = list(map(int, input().split()))
 
 arr = [[0, 0, 0] for _ in range(N)]
-arr[0] = [A[0], 0, 0]
-arr[1] = [A[0]+A[1]-min(A[0], A[1]), min(A[0], A[1]), 0]
+arr[0] = [A[0]-min(A[0], A[1]), min(A[0], A[1]), 0]
+arr[1] = [A[1]-min(A[0], A[1]), 0, 0]
 
 
 for i in range(2, N):
@@ -24,12 +24,9 @@ for i in range(2, N):
         add_3 = new
         arr[i][0] = add_3
 
-    
-    print(A)
 
-q = min(A[N-2], A[N-1])
-p = A[N-2] + A[N-1] - q
-
-ans += (p*3 + q*5)
+ans = 0
+for i in range(N):
+    ans += arr[i][0]*3 + arr[i][1]*5 + arr[i][2]*7
 
 print(ans)
