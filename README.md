@@ -54,7 +54,7 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김도훈 | 2533 | https://www.acmicpc.net/problem/2533 |
-| 김상범 |  |  |
+| 김상범 | 2369 | https://www.acmicpc.net/problem/2369 |
 | 이운재 | 16890 | https://www.acmicpc.net/problem/16890 |
 
 
