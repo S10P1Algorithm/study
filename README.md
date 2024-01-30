@@ -62,6 +62,6 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김영빈 |  |  |
+| 김영빈 | 9369 | https://www.acmicpc.net/problem/9369 |
 | 김준수 | 7579 | https://www.acmicpc.net/problem/7579 |
 | 김지용 |  |  |
