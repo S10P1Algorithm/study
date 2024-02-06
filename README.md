@@ -65,3 +65,11 @@
 | 김영빈 | 9369 | https://www.acmicpc.net/problem/9369 |
 | 김준수 | 7579 | https://www.acmicpc.net/problem/7579 |
 | 김지용 | 14391 | https://www.acmicpc.net/problem/14391 |
+
+## WEEK 5
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 김도훈 |  |  |
+| 김상범 |  |  |
+| 이운재 | 17352 | https://www.acmicpc.net/problem/17352 |
