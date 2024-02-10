@@ -70,6 +70,6 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김도훈 |  |  |
+| 김도훈 | 20500 | https://www.acmicpc.net/problem/20500 |
 | 김상범 | 1208 | https://www.acmicpc.net/problem/1208 |
 | 이운재 | 17352 | https://www.acmicpc.net/problem/17352 |
