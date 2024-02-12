@@ -32,3 +32,5 @@ for i in range(1,N+1):
     if not check[i]:
         print(i, i-1)
         break
+
+# 단순하게 풀어도 풀림 ;;
