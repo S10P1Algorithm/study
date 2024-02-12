@@ -7,3 +7,5 @@ for i in range(2, N + 1):
     else:
         dp[i] = (dp[i-1] * 2 - 1) % 1000000007
 print(dp[N])
+
+# 손으로 ㅈㄴ 노가다 해서 구함
