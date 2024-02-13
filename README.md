@@ -73,3 +73,11 @@
 | 김도훈 | 20500 | https://www.acmicpc.net/problem/20500 |
 | 김상범 | 1208 | https://www.acmicpc.net/problem/1208 |
 | 이운재 | 17352 | https://www.acmicpc.net/problem/17352 |
+
+## WEEK 6
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 김영빈 |  |  |
+| 김준수 |  |  |
+| 김지용 | 19641 | https://www.acmicpc.net/problem/19641 |
