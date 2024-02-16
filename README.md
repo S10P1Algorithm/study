@@ -79,5 +79,5 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김영빈 |  |  |
-| 김준수 |  |  |
+| 김준수 | 14906 | https://www.acmicpc.net/problem/14906 |
 | 김지용 | 19641 | https://www.acmicpc.net/problem/19641 |
