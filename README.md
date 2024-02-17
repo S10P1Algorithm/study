@@ -78,6 +78,6 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김영빈 |  |  |
+| 김영빈 | 17135 | https://www.acmicpc.net/problem/17135 |
 | 김준수 | 14906 | https://www.acmicpc.net/problem/14906 |
 | 김지용 | 19641 | https://www.acmicpc.net/problem/19641 |
