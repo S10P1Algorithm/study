@@ -81,3 +81,11 @@
 | 김영빈 | 17135 | https://www.acmicpc.net/problem/17135 |
 | 김준수 | 14906 | https://www.acmicpc.net/problem/14906 |
 | 김지용 | 19641 | https://www.acmicpc.net/problem/19641 |
+
+## WEEK 7
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 이운재 | 9935 | https://www.acmicpc.net/problem/9935 |
+| 김도훈 |  |  |
+| 김상범 |  |  |
