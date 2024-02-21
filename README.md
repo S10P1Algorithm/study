@@ -88,4 +88,4 @@
 |:---:|---:|:---|
 | 이운재 | 9935 | https://www.acmicpc.net/problem/9935 |
 | 김도훈 |  |  |
-| 김상범 |  |  |
+| 김상범 | 1562 | https://www.acmicpc.net/problem/1562 |
