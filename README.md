@@ -87,5 +87,5 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 이운재 | 9935 | https://www.acmicpc.net/problem/9935 |
-| 김도훈 |  |  |
+| 김도훈 | 20166 | https://www.acmicpc.net/problem/20166 |
 | 김상범 | 1562 | https://www.acmicpc.net/problem/1562 |
