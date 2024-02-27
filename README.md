@@ -89,3 +89,11 @@
 | 이운재 | 9935 | https://www.acmicpc.net/problem/9935 |
 | 김도훈 | 20166 | https://www.acmicpc.net/problem/20166 |
 | 김상범 | 1562 | https://www.acmicpc.net/problem/1562 |
+
+## WEEK 8
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 김영빈 |  |  |
+| 김준수 |  |  |
+| 김지용 | 1700 | https://www.acmicpc.net/problem/1700 |
