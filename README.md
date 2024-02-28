@@ -95,5 +95,5 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김영빈 |  |  |
-| 김준수 |  |  |
+| 김준수 | 14499 | https://www.acmicpc.net/problem/14499 |
 | 김지용 | 1700 | https://www.acmicpc.net/problem/1700 |
