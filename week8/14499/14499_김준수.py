@@ -2,7 +2,7 @@
 '''
 N, M, r, c, K = map(int, input().split())
 zido = []
-for i in range(N):
+for _ in range(N):
     zido.append(list(map(int, input().split())))
 orders = list(map(int, input().split()))
 
@@ -19,8 +19,7 @@ v_bottom = 3
 for order in orders:
 
     if order == 1:
-        dr, dc = delta[1]
-        nr, nc = r + dr, c + dc
+        nr, nc = r + delta[order][0], c + delta[order][1]
         if 0 <= nr < N and 0 <= nc < M:
             r, c = nr, nc
             h_top = (h_top + 3) % 4
@@ -32,15 +31,14 @@ for order in orders:
                 zido[r][c] = hori[h_bottom]
             vert[v_top] = hori[h_top]
             vert[v_bottom] = hori[h_bottom]
-            print(vert[v_top])
+            print(hori[h_top])
 
     elif order == 2:
-        dr, dc = delta[2]
-        nr, nc = r + dr, c + dc
+        nr, nc = r + delta[order][0], c + delta[order][1]
         if 0 <= nr < N and 0 <= nc < M:
             r, c = nr, nc
             h_top = (h_top + 1) % 4
-            h_bottom = (h_bottom + 2) % 4
+            h_bottom = (h_top + 2) % 4
             if zido[r][c] != 0:
                 hori[h_bottom] = zido[r][c]
                 zido[r][c] = 0
@@ -48,27 +46,10 @@ for order in orders:
                 zido[r][c] = hori[h_bottom]
             vert[v_top] = hori[h_top]
             vert[v_bottom] = hori[h_bottom]
-            print(vert[v_top])
+            print(hori[h_top])
 
     elif order == 3:
-        dr, dc = delta[3]
-        nr, nc = r + dr, c + dc
-        if 0 <= nr < N and 0 <= nc < M:
-            r, c = nr, nc
-            v_top = (v_top + 3) % 4
-            v_bottom = (v_top + 2) % 4
-            if zido[r][c] != 0:
-                vert[v_bottom] = zido[r][c]
-                zido[r][c] = 0
-            else:
-                zido[r][c] = vert[v_bottom]
-            hori[h_top] = vert[v_top]
-            hori[h_bottom] = vert[v_bottom]
-            print(vert[v_top])
-
-    else:
-        dr, dc = delta[4]
-        nr, nc = r + dr, c + dc
+        nr, nc = r + delta[order][0], c + delta[order][1]
         if 0 <= nr < N and 0 <= nc < M:
             r, c = nr, nc
             v_top = (v_top + 1) % 4
@@ -80,7 +61,22 @@ for order in orders:
                 zido[r][c] = vert[v_bottom]
             hori[h_top] = vert[v_top]
             hori[h_bottom] = vert[v_bottom]
-            print(vert[v_top])
+            print(hori[h_top])
+
+    else:
+        nr, nc = r + delta[order][0], c + delta[order][1]
+        if 0 <= nr < N and 0 <= nc < M:
+            r, c = nr, nc
+            v_top = (v_top + 3) % 4
+            v_bottom = (v_top + 2) % 4
+            if zido[r][c] != 0:
+                vert[v_bottom] = zido[r][c]
+                zido[r][c] = 0
+            else:
+                zido[r][c] = vert[v_bottom]
+            hori[h_top] = vert[v_top]
+            hori[h_bottom] = vert[v_bottom]
+            print(hori[h_top])
 
 
 ---------------------------------------------------------'''
