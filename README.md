@@ -102,6 +102,6 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김영빈 |  |  |
+| 김영빈 | 1240 | https://www.acmicpc.net/problem/1240 |
 | 김상범 |  |  |
 | 이운재 | 2357 | https://www.acmicpc.net/problem/2357 |
