@@ -112,4 +112,4 @@
 |:---:|---:|:---|
 | 김도훈 |  |  |
 | 김지용 |  |  |
-| 이운재 | 2357 | https://www.acmicpc.net/problem/2263 |
+| 이운재 | 2263 | https://www.acmicpc.net/problem/2263 |
