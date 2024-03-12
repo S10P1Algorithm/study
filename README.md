@@ -111,5 +111,5 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김도훈 |  |  |
-| 김지용 |  |  |
+| 김지용 | 1517 | https://www.acmicpc.net/problem/1517 |
 | 이운재 | 2263 | https://www.acmicpc.net/problem/2263 |
