@@ -11,8 +11,8 @@ cnt = 0
 
 def merge(input_arr, start, mid, end):
     global cnt
-    left_arr = input_arr[start:mid+1]
-    right_arr = input_arr[mid+1:end+1]
+    left_arr = input_arr[start:mid + 1]
+    right_arr = input_arr[mid + 1:end + 1]
 
     left_len = len(left_arr)
     right_len = len(right_arr)
@@ -27,7 +27,7 @@ def merge(input_arr, start, mid, end):
             left_index += 1
         else:
             input_arr[curr_index] = right_arr[right_index]
-            cnt += (left_len-left_index)
+            cnt += (left_len - left_index)
             right_index += 1
 
         curr_index += 1
