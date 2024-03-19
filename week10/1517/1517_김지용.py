@@ -9,6 +9,7 @@ arr = list(map(int, input().split()))
 cnt = 0
 
 
+# 병합 정렬(merge sort)를 사용한다.
 def merge(input_arr, start, mid, end):
     global cnt
     left_arr = input_arr[start:mid + 1]
@@ -27,6 +28,8 @@ def merge(input_arr, start, mid, end):
             left_index += 1
         else:
             input_arr[curr_index] = right_arr[right_index]
+
+            # 왼쪽의 숫자들이 뒤(오른쪽)로 가야할 때 가야되는 길이만큼 cnt에 더한다.
             cnt += (left_len - left_index)
             right_index += 1
 
