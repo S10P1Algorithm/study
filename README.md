@@ -34,6 +34,7 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김도훈 | 16496 | https://www.acmicpc.net/problem/16496 |
+| 김상범 | 1014 | https://www.acmicpc.net/problem/1014 |  
 | 김준수 | 1450 | https://www.acmicpc.net/problem/1450 |
 
 ## WEEK 10
