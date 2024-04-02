@@ -10,6 +10,7 @@ for i in nums:
     while len(s) < 10:
         s += s[len(s)-leng]
     greedy.append(([*list(s)],str(i)))
+print(greedy)
 greedy.sort(key = lambda x : x[0], reverse = True)
 
 ans = ""
