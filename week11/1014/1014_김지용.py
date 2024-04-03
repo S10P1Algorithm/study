@@ -8,6 +8,9 @@ C = int(input())
 delta_r = [-1, -1, 0, 0, 1, 1]
 delta_c = [-1, 1, -1, 1, -1, 1]
 
+delta_r2 = [1, -1]
+delta_c2 = [0, 0]
+
 
 def bfs(start_r, start_c):
     global visited, pairs, delta_r, delta_c
@@ -25,9 +28,16 @@ def bfs(start_r, start_c):
         for delta in range(6):
             nr = row + delta_r[delta]
             nc = col + delta_c[delta]
-            if (nr, nc) not in visited and 0 <= nr < N and 0 <= nc < M and tables[nr][nc] == ".":
+            if (nr, nc) not in visited and 0 <= nr < N and 0 <= nc < M and tables[nr][nc] != "x":
                 q.append((nr, nc, 1 - stat))
                 visited.add((nr, nc))
+        for delta2 in range(2):
+            nr2 = row + delta_r2[delta2]
+            nc2 = col + delta_c2[delta2]
+            if (nr2, nc2) not in visited and 0 <= nr2 < N and 0 <= nc2 < M and tables[nr2][nc2] != "x":
+                q.append((nr2, nc2, stat))
+                visited.add((nr2, nc2))
+
     pairs += max(bin1, bin2)
 
 
