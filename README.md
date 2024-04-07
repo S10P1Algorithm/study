@@ -33,7 +33,7 @@
 
 |이름|문제번호|링크|
 |:---:|---:|:---|
-| 김영빈 | 1208 | https://www.acmicpc.net/problem/1208 |
+| 김영빈 | 2352 | https://www.acmicpc.net/problem/2352 |
 | 김지용 | 17143 | https://www.acmicpc.net/problem/17143 |  
 | 이운재 | 1253 | https://www.acmicpc.net/problem/1253  |
 
