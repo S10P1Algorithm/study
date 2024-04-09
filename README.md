@@ -29,6 +29,14 @@
 | 이운재 |  |
 | 장대호 |  |
 
+## WEEK 13
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 김상범 | 6989 | https://www.acmicpc.net/problem/6989 |
+|  |  | https://www.acmicpc.net/problem/ |  
+|  |  | https://www.acmicpc.net/problem/  |
+
 ## WEEK 12
 
 |이름|문제번호|링크|
