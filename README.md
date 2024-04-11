@@ -35,7 +35,7 @@
 |:---:|---:|:---|
 | 김상범 | 6989 | https://www.acmicpc.net/problem/6989 |
 | 김도훈 | 10937 | https://www.acmicpc.net/problem/10937 |  
-|  |  | https://www.acmicpc.net/problem/  |
+| 김준수 | 1938 | https://www.acmicpc.net/problem/1938  |
 
 ## WEEK 12
 
