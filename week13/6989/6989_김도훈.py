@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", 'r')
+# sys.stdin = open("input.txt", 'r')
 
 # 1<=N<=150, 1<=score[i]<=100, 1<=K<=2*1e9
 N = int(input())
@@ -44,13 +44,16 @@ else:
     dp[N-1] |= final_bit
     dp[N-1] |= dp[N-2]
 ans = 0
-for i in range(K, 2000000001):
-    if not(dp[N-1] & 1<<i):
-        ans = i
-        break
-# debug_string = bin(dp[N-1])
-# for c, idx in enumerate(debug_string):
-#     print("index: ", idx, ", sum: ", 186-c)
-# print(bin(dp[N-1]))
+if K >= 1132500:
+    print(K)
+else:
+    for i in range(K, 1132500):
+        if not(dp[N-1] & 1<<i):
+            ans = i
+            break
+    # debug_string = bin(dp[N-1])
+    # for c, idx in enumerate(debug_string):
+    #     print("index: ", idx, ", sum: ", 186-c)
+    # print(bin(dp[N-1]))
 
-print(ans)
+    print(ans)

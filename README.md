@@ -17,6 +17,15 @@
 - 코드 작성시 변수명 및 함수명 등 이해할 수 있도록 설정
 - 주석 상세히 작성
 
+## WEEK 14
+
+|이름|문제번호|링크|
+|:---:|---:|:---|
+| 김도훈 |  | https://www.acmicpc.net/problem/ |
+| 김영빈 |  | https://www.acmicpc.net/problem/ |  
+| 이운재 | 2011 | https://www.acmicpc.net/problem/2011  |
+
+
 ## WEEK 13
 
 |이름|문제번호|링크|
