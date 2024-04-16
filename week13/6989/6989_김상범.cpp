@@ -1,5 +1,7 @@
-//pentagon@sasa.hs.kr 
-#include<bits/stdc++.h>
+#include <bitset>
+#include <fstream>
+#include <iostream>
+
 using namespace std;
 const int N = 152;
 int n,k,arr[N],sum[N],score[N][N]; 
