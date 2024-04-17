@@ -22,7 +22,7 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김도훈 | 5052 | https://www.acmicpc.net/problem/5052 |
-| 김영빈 |  | https://www.acmicpc.net/problem/ |  
+| 김영빈 | 1810  | https://www.acmicpc.net/problem/1810 |  
 | 이운재 | 2011 | https://www.acmicpc.net/problem/2011  |
 
 
