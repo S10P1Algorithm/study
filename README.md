@@ -22,9 +22,14 @@
 |이름|문제번호|링크|
 |:---:|---:|:---|
 | 김도훈 | 5052 | https://www.acmicpc.net/problem/5052 |
+<<<<<<< HEAD
 | 김영빈 | 1810  | https://www.acmicpc.net/problem/1810 |  
 | 이운재 | 2011 | https://www.acmicpc.net/problem/2011  |
 
+=======
+| 김영빈 |  |  |  
+| 이운재 |  |  |
+>>>>>>> 3ff2954 (Update README.md)
 
 ## WEEK 13
 
