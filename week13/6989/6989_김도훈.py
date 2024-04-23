@@ -44,6 +44,7 @@ else:
     dp[N-1] |= final_bit
     dp[N-1] |= dp[N-2]
 ans = 0
+<<<<<<< HEAD
 if K >= 1132500:
     print(K)
 else:
@@ -55,5 +56,15 @@ else:
     # for c, idx in enumerate(debug_string):
     #     print("index: ", idx, ", sum: ", 186-c)
     # print(bin(dp[N-1]))
+=======
+for i in range(K, 2000000001):
+    if not(dp[N-1] & 1<<i):
+        ans = i
+        break
+debug_string = bin(dp[N-1])
+for c, idx in enumerate(debug_string):
+    print("index: ", idx, ", sum: ", 186-c)
+print(bin(dp[N-1]))
+>>>>>>> 9c01c2f (commit)
 
     print(ans)

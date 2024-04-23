@@ -9,6 +9,7 @@ int n,k,arr[N],sum[N],score[N][N];
 //if j>i : then score [j][i] = 0 
 //100+200+ .... + 15000 < 1140000
 bitset<1140000> DT[N];
+// 총 백만개 
 void input(){
     ios::sync_with_stdio(false); cin.tie(0);
     cin>>n;
