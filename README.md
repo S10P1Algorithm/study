@@ -24,7 +24,7 @@
 
 |  이름  | 문제번호 | 링크                                 |
 | :----: | -------: | :----------------------------------- |
-| 김상범 |          | https://www.acmicpc.net/problem/     |
+| 김상범 |     1725    | https://www.acmicpc.net/problem/1725     |
 | 김준수 |    60062 | https://school.programmers.co.kr/learn/courses/30/lessons/60062 |
 | 이운재 |     2023 | https://www.acmicpc.net/problem/2023 |
 
