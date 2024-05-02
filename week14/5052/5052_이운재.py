@@ -1,5 +1,5 @@
 import sys
-
+sys.stdin = open("input.txt", "r")
 input = sys.stdin.readline
 
 T = int(input())
@@ -13,7 +13,7 @@ for _ in range(T):
         arr.append(input().rstrip())
 
     arr.sort()
-    # print(arr)
+    print(arr)
     flag = False
     for i in range(N-1):
         if arr[i] == arr[i+1][:len(arr[i])]:
