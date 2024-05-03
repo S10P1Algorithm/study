@@ -24,7 +24,7 @@
 
 |  이름  | 문제번호 | 링크                                 |
 | :----: | -------: | :----------------------------------- |
-| 김도훈 |  |  |
+| 김도훈 | 27652 | https://www.acmicpc.net/problem/27652 |
 | 김상범 | 9576 | https://www.acmicpc.net/problem/9576 |
 | 이지원 |      2252 | https://www.acmicpc.net/problem/2252 |
 
