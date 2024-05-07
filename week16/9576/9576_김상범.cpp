@@ -22,7 +22,7 @@ int main (void){
         }
         for(int j=0; j<m; j++){
             cin >> a >> b;
-            pq.push( make_pair(b, a));
+            pq.push(make_pair(b, a));
         }
                     
         while(!pq.empty()){
@@ -39,5 +39,5 @@ int main (void){
             }
         }
         cout << cnt << '\n';   
-    }   
+    }
 }
