@@ -24,7 +24,7 @@
 
 | 이름  |  문제번호 | 링크                               |
 |:---:|------:|:---------------------------------|
-| 김준수 |       | https://www.acmicpc.net/problem/ |
+| 김준수 | 14658 | https://www.acmicpc.net/problem/14658 |
 | 이운재 | 42893 | https://school.programmers.co.kr/learn/courses/30/lessons/42893 |
 | 이지원 |       | https://www.acmicpc.net/problem/ |
 
