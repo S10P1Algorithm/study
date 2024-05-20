@@ -25,7 +25,7 @@
 | 이름  |  문제번호 | 링크                                                              |
 |:---:|------:|:----------------------------------------------------------------|
 | 김도훈 | 19648 | https://www.acmicpc.net/problem/19648 |
-| 김상범 |       |  |
+| 김상범 |  3068 | https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/?envType=daily-question&envId=2024-05-19 |
 | 이운재 |  1006 | https://www.acmicpc.net/problem/1006                            |
 
 
